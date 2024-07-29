@@ -2,7 +2,10 @@
 
 function insight($conn,$user_id){
 
-    $query = "select * from transactions where user_id = '$user_id'";
+
+
+
+    $query = "select * from transactions where user_id = '$user_id' ";
     $result = $conn->query($query);
 
 $highest_transaction = 0;
